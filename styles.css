@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0 2%;
+    align-items: center;
+    height: 10vh;
+    background-color: #e8e8e8;
+    margin-bottom: 30%;
+}
+
+.navbar > #logo > img {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #aeaeae;
+    margin-left: 20px;
+}
+
+.navbar > #about_button {
+    font-size: 18px;
+}
+

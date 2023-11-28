@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title> Zenskin </title>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" id="logo"> <img src="" alt="zenskin logo">  </a>
+            <a onclick="scrollToSections(aboutSection)" id="about_button"> About </a>
+        </div>
+    </header>
+
+    <div class="section section1" id="product_n_product_description">
+        <div class="pnpd_contents">
+            <div class="product_n_sell">
+                <img src="" alt="zenskin image" id="product_image"> 
+                <a onclick="" id="product_purchase_button"> Purchase </a>
+            </div>
+            <div class="product_description">
+                <h3 id="product_description_title"> Product Description </h3>
+                <p id="product_description_content"> 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section2" id="benefits_n_contents">
+        <div class="benefits_contents">
+            <h3 id="benefits_title"> Benefits </h3> 
+            <p id="benefits_content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </p>
+        </div>
+        <div class="info_contents">
+            <h3 id="info_title"> Contents </h3>
+            <p id="info_contents">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </p>
+        </div>
+        <div class="instruction_contents">
+            <h3 id="instruction_title"> Instruction </h3>
+            <div class="instruction_info">
+                <p class="steps" id="step1"> * Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                <p class="steps" id="step2"> * Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </p>
+                <p class="steps" id="step3"> * Ut enim ad minim veniam, quis nostrud </p>
+                <p class="steps" id="step4"> * Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about_comtents">
+        <h3 id="about_title"> About </h3>
+        <div class="about_info">
+            <img src="" id="creators_image">
+            <p id="about_details"> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </p>
+        </div> 
+    </div>
+
+    <footer class="footer_contents">
+        <h3 id="footer_title"> Footer </h3>
+    </footer>
+
+
+<script>
+ function scrollToSections(sectionName) {
+    const section = document.getElementById(sectionName);
+    if (section) {
+        section.scrollIntoView({behavior: 'smooth'});
+    }
+ }   
+</script>
+</body>
+</html>
