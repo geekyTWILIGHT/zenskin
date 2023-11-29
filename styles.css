@@ -1,3 +1,7 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -9,7 +13,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     height: 10vh;
-    background-color: #ffffff;
+    background-color: #970048;
 }
 
 .navigation_bar > #product_logo > img {
@@ -31,9 +35,17 @@ body {
 }
 
 .navigation_bar > .other_navbar_buttons > .navbar_buttons {
+    font-size: 85%;
     cursor: pointer;
     border: none;
-    background-color: #ffffff;
+    background-color: #970048;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    color: #fff;
+}
+
+.navigation_bar > .other_navbar_buttons > .navbar_buttons:hover {
+    color: #53DC00;
 }
 
 .product_n_purchase_and_product_description {
@@ -42,7 +54,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #e8e8e8;
+    background-color: #4BC200;
 }
 
 .product_n_purchase_and_product_description > .product_n_purchase {
@@ -65,6 +77,9 @@ body {
     width: 15%;
     height: 5%;
     cursor: pointer;
+    border: none;
+    background-color: #970048;
+    color: #fff;
 }
 
 .product_n_purchase_and_product_description > .product_description {
@@ -75,6 +90,10 @@ body {
     width: 50%;
 }
 
+.product_n_purchase_and_product_description > .product_description > #product_description_title {
+    color: black;
+}
+
 .product_n_purchase_and_product_description > .product_description > .product_description_contents {
     display: flex;
     flex-direction: column;
@@ -82,6 +101,7 @@ body {
     align-items: center;
     width: 75%;
     text-indent: 5%;
+    color: black;
 }
 
 .product_benefits_n_contents_n_instruction {
@@ -185,12 +205,51 @@ body {
 
 .footer {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background-color: #6e6e6e;
+}
+
+.footer > .footer_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > .footer_info > #product_tm {
+    margin-bottom: -5%;
+
+}
+
+.footer > .contact_accounts {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 35vh;
-    background-color: #6e6e6e;
+    margin-bottom: 1%;
 }
+
+.footer > .contact_accounts > .accounts {
+    width: 50%;
+    height: 50%;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+} 
+
+
+.footer > .contact_accounts > .accounts:hover {
+    color: black;
+}
+
+
+
+
+
+
 
 
 
