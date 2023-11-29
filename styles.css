@@ -11,7 +11,6 @@ body {
     align-items: center;
     height: 10vh;
     background-color: #e8e8e8;
-    margin-bottom: 30%;
 }
 
 .navbar > #logo > img {
@@ -24,4 +23,61 @@ body {
 .navbar > #about_button {
     font-size: 18px;
 }
+
+.product_n_product_description_contents {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: 	#e0e0e0;
+}
+
+.product_n_product_description_contents > .product_n_sell {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_n_product_description_contents > .product_n_sell > #product_image {
+    width: 50%;
+    height: 50%;
+    background-color: #aeaeae;
+}
+
+.product_n_product_description_contents > .product_n_sell > #product_purchase_button {
+    width: 15%;
+    height: 5%;
+    margin-top: 3%;
+    background-color: #aeaeae;
+    border: none;
+    cursor: pointer;
+}
+
+.product_n_product_description_contents > .product_description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_n_product_description_contents > .product_description > #product_description_title {
+    margin-bottom: 3%;
+}
+
+.product_n_product_description_contents > .product_description > #product_description_content {
+    width: 75%;
+}
+
+
+
+
+
+
+
+
 
