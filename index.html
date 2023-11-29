@@ -9,75 +9,95 @@
 <body>
 
     <header>
-        <div class="navbar">
-            <a href="index.html" id="logo"> <img src="" alt="zenskin logo">  </a>
-            <a onclick="scrollToSections(aboutSection)" id="about_button"> About </a>
+        <div class="navigation_bar" id="navigation_bar_section">
+            <a id="product_logo" onclick="scrollToSections('product_and_description_section')"> <img src="images/zenskin_logo.png" alt="zenskin logo">  </a>
+            <div class="other_navbar_buttons">
+                <button onclick="scrollToSections('product_details_section')" class="navbar_buttons" id="steps_button"> Steps </button>
+                <button onclick="scrollToSections('about_us_section')" class="navbar_buttons" id="about_button"> About </button>
+            </div>
         </div>
     </header>
 
-    <div class="section section1 product_n_product_description_contents">
-        <div class="product_n_sell">
+    <div class="section section1 product_n_purchase_and_product_description" id="product_and_description_section">
+        <div class="product_n_purchase">
             <img src="" alt="zenskin image" id="product_image"> 
             <button onclick="" id="product_purchase_button"> Purchase </button>
         </div>
         <div class="product_description">
             <h3 id="product_description_title"> Product Description </h3>
-            <p id="product_description_content"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-            </p>
-        </div>
-    </div>
-
-    <div class="section section2 benefits_n_contents">
-        <div class="benefits_contents">
-            <h3 id="benefits_title"> Benefits </h3> 
-            <p id="benefits_content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-            </p>
-        </div>
-        <div class="section section3 info_contents">
-            <h3 id="info_title"> Contents </h3>
-            <p id="info_contents">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-            </p>
-        </div>
-        <div class="section section4 instruction_contents">
-            <h3 id="instruction_title"> Instruction </h3>
-            <div class="instruction_info">
-                <p class="steps" id="step1"> * Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-                <p class="steps" id="step2"> * Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </p>
-                <p class="steps" id="step3"> * Ut enim ad minim veniam, quis nostrud </p>
-                <p class="steps" id="step4"> * Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </p>
+            <div class="product_description_contents">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
             </div>
         </div>
     </div>
 
-    <div class="about_comtents">
-        <h3 id="about_title"> About </h3>
-        <div class="about_info">
-            <img src="" id="creators_image">
-            <p id="about_details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-            </p>
+    <div class="section section2 product_benefits_n_contents_n_instruction" id="product_details_section">
+        <div class="product_benefits">
+            <h3 id="benefits_title"> Benefits </h3> 
+            <div class="benefits_content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                </p>
+            </div>
+        </div>
+        <div class="product_contents">
+            <h3 id="contents_title"> Contents </h3>
+            <div class="contents_contents">
+                <p> 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                </p>
+            </div>
+        </div>
+        <div class="product_instructions">
+            <h3 id="instructions_title"> Instructions </h3>
+            <div class="instructions_contents">
+                <p class="steps" id="step1"> * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p class="steps" id="step2"> * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p class="steps" id="step3"> * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p class="steps" id="step4"> * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section3 product_about" id="about_us_section">
+        <div class="about_contents">
+            <h3 id="about_title"> About </h3>
+            <img src="" id="creators_image" alt="zenskin producers image">
+            <div class="about_details"> 
+                <p> 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
         </div> 
     </div>
 
-    <footer class="footer_contents">
+    <footer class="footer">
         <h3 id="footer_title"> Footer </h3>
     </footer>
 
 
 <script>
+
  function scrollToSections(sectionName) {
     const section = document.getElementById(sectionName);
     if (section) {
         section.scrollIntoView({behavior: 'smooth'});
     }
- }   
+}   
+
 </script>
 </body>
 </html>
