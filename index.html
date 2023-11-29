@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/486b0c87a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="development.css">
     <title> Zenskin </title>
 </head>
 <body>
@@ -12,8 +16,8 @@
         <div class="navigation_bar" id="navigation_bar_section">
             <a id="product_logo" onclick="scrollToSections('product_and_description_section')"> <img src="images/zenskin_logo.png" alt="zenskin logo">  </a>
             <div class="other_navbar_buttons">
-                <button onclick="scrollToSections('product_details_section')" class="navbar_buttons" id="steps_button"> Steps </button>
-                <button onclick="scrollToSections('about_us_section')" class="navbar_buttons" id="about_button"> About </button>
+                <button onclick="scrollToSections('product_details_section')" class="navbar_buttons" id="steps_button"> STEPS </button>
+                <button onclick="scrollToSections('about_us_section')" class="navbar_buttons" id="about_button"> ABOUT </button>
             </div>
         </div>
     </header>
@@ -59,12 +63,12 @@
             </div>
         </div>
         <div class="product_instructions">
-            <h3 id="instructions_title"> Instructions </h3>
+            <h3 id="instructions_title"> Proper Way to Wash Your Hands </h3>
             <div class="instructions_contents">
-                <p class="steps" id="step1"> * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <p class="steps" id="step2"> * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <p class="steps" id="step3"> * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <p class="steps" id="step4"> * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p class="steps" id="step1"> 1. wet your hands with clean, running water, turn off the tap, and apply our ZenSkin Soap. </p>
+                <p class="steps" id="step2"> 2. build lather by rubbing your hands together. Don’t forget to include the back of your hands, between your fingers, and under your nails. </p>
+                <p class="steps" id="step3"> 3. keep scrubbing for at least 20 seconds — sing Happy Birthday or do the Lifebuoy dance if you need a timer! </p>
+                <p class="steps" id="step4"> 4. rinse well and dry your hands using a clean towel. Air dry them if a towel is not available. </p>
             </div>
         </div>
     </div>
@@ -85,7 +89,13 @@
     </div>
 
     <footer class="footer">
-        <h3 id="footer_title"> Footer </h3>
+        <div class="footer_info">
+            <p id="product_tm"> Zenskin <sup> TM </sup> </p>
+            <p id="copyright_info"> © 2023 Zenskin. ALL RIGHTS RESERVED </p>
+        </div>
+        <div class="contact_accounts">
+            <a href="" class="accounts" id="facebook_account"> <i class="fa-brands fa-facebook"></i> </a>
+        </div>
     </footer>
 
 
@@ -100,4 +110,5 @@
 
 </script>
 </body>
+</html>
 </html>
