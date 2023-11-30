@@ -25,7 +25,7 @@
     <div class="section section1 product_n_purchase_and_product_description" id="product_and_description_section">
         <div class="product_n_purchase">
             <img src="" alt="zenskin image" id="product_image"> 
-            <button onclick="" id="product_purchase_button"> Purchase </button>
+            <button onclick="orderFormBlurBackGround()" id="product_purchase_button"> Purchase </button>
         </div>
         <div class="product_description">
             <h3 id="product_description_title"> Product Description </h3>
@@ -88,15 +88,69 @@
         </div> 
     </div>
 
-    <footer class="footer">
+    <footer class="footer" id="footer_section">
         <div class="footer_info">
             <p id="product_tm"> Zenskin <sup> TM </sup> </p>
             <p id="copyright_info"> © 2023 Zenskin. ALL RIGHTS RESERVED </p>
         </div>
         <div class="contact_accounts">
-            <a href="https://www.facebook.com/timajo.miko" target="_blank" class="accounts" id="facebook_account"> <i class="fa-brands fa-facebook"></i> </a>
+            <a href="" class="accounts" id="facebook_account"> <i class="fa-brands fa-facebook"></i> </a>
         </div>
     </footer>
+
+    <div class="order_form" id="order_purchase_form">
+        <h3 id="order_form_title"> Order Form </h3>
+        <form class="form" action="javascript:void(0);">
+            <div class="name_email_address">
+                <div class="name">
+                    <label> Name </label>
+                    <input  type="text" placeholder="Enter full name" required>
+                </div>
+                <div class="email_address"> 
+                    <label> Email Adress </label>
+                    <input type="text" placeholder="Enter email address" required>
+                </div>
+            </div>
+            <hr id="first_hr">
+            <div class="credit_card_number_expiry_date_security_code">
+                <div class="container1">
+                    <i id="credit_card_icon" class="fa-regular fa-credit-card"></i>
+                    <div class="credit_card_number">
+                        <label> Credit card number </label>
+                        <input type="number" placeholder="0000-0000-0000-0000" required>
+                    </div>
+                </div>
+                <div class="container2">
+                    <div class="security_code">
+                        <label> Security code  </label>
+                        <input type="number" placeholder="CVC" required>
+                    </div>
+                    <div class="expiry_date">
+                        <label> Expiry date </label>
+                        <input type="date" placeholder="MM / YY" required>
+                    </div>
+                </div>
+            </div>
+            <hr id="second_hr">       
+            <div class="address">
+                <div class="street_address">
+                    <label> Address </label>
+                    <input type="text" placeholder="Enter street address" required>
+                </div>
+                <div class="city_postal_code">
+                    <div class="city">
+                        <label> City </label>
+                        <input type="text" placeholder="Enter city" required>
+                    </div>
+                    <div class="postal_code">
+                        <label> Postal code </label>
+                        <input type="number" placeholder="Enter postal code" required>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <button onclick="" id="place_order_button"> Place Order </button>
+    </div>
 
 
 <script>
@@ -108,7 +162,38 @@
     }
 }   
 
+document.addEventListener('DOMContentLoaded', function() {
+    const blurButton = document.getElementById('product_purchase_button');
+    const content = document.getElementById('navigation_bar_section');
+    const content2 = document.getElementById('product_and_description_section');
+    const content3 = document.getElementById('product_details_section');
+    const content4 = document.getElementById('about_us_section');
+    const content5 = document.getElementById('footer_section');
+    const form = document.getElementById('order_purchase_form');
+
+    blurButton.addEventListener('click', () => {
+      content.classList.toggle('blurred');
+      content2.classList.toggle('blurred');
+      content3.classList.toggle('blurred');
+      content4.classList.toggle('blurred');
+      content5.classList.toggle('blurred');
+      form.style.display = form.style.display === 'none' ? 'flex' : 'none';
+    });
+
+    document.addEventListener('mousedown', function(event) {
+      if (!form.contains(event.target) && event.target !== blurButton) {
+        form.style.display = 'none';
+        content.classList.remove('blurred');
+        content2.classList.remove('blurred');
+        content3.classList.remove('blurred');
+        content4.classList.remove('blurred');
+        content5.classList.remove('blurred');
+      }
+    });
+
+    form.style.display = 'none';
+  });
+
 </script>
 </body>
-</html>
 </html>
