@@ -159,6 +159,10 @@ body {
     width: 75%;
 }
 
+.product_benefits_n_contents_n_instruction > .product_contents > .contents_contents > p {
+    font-size: 14px;
+}
+
 .product_benefits_n_contents_n_instruction > .product_instructions {
     display: flex;
     flex-direction: column;
@@ -173,11 +177,11 @@ body {
     justify-content: center;
     align-items: center;
     width: 75%;
-    font-size: 14px;
 }
 
 .product_benefits_n_contents_n_instruction > .product_instructions > .instructions_contents > .steps {
     margin-bottom: 1%;
+    font-size: 14px;
 }
 
 .product_benefits_n_contents_n_instruction > .product_instructions > .instructions_contents > .steps:last-child {
