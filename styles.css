@@ -173,6 +173,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 75%;
+    font-size: 14px;
 }
 
 .product_benefits_n_contents_n_instruction > .product_instructions > .instructions_contents > .steps {
