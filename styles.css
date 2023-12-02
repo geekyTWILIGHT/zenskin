@@ -362,7 +362,8 @@ body {
 }
 
 .product_about > .about_contents > .contact_us_contents > .contact_us_buttons_icons > .accounts:hover {
-    color: #B8C898;
+    color: #1D981C;
+/*     color: #B8C898; */
 }
 
 .footer {
